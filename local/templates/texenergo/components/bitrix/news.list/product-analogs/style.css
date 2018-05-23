@@ -1,0 +1,14 @@
+.pAccessoriesUl .product .name {
+    width: 165px;
+    overflow-wrap: break-word; /* не поддерживает IE, Firefox; является копией word-wrap */
+    word-wrap: break-word;
+    /*word-break: break-all;*/ /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */
+    line-break: loose; /* нет поддержки для русского языка */
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; /* не поддерживает IE, Opera12.14, значение auto не поддерживается Chrome */
+}
+.pAccessories-header {
+    background-color:#55575f;
+    height:36px;
+}

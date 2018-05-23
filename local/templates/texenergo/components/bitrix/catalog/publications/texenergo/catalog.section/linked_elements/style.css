@@ -1,0 +1,15 @@
+.cat-products-list .cat-header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.cat-products .product-image .picture {
+    display: block;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-decoration: none;
+}
+
+.cat-products .product-image .picture img {
+    display: none;
+}

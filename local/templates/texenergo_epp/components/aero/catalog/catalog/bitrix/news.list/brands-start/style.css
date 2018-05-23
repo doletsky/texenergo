@@ -1,0 +1,34 @@
+.brand-block {
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.brand-block-list {
+    margin-top: 10px;
+}
+
+.brand-block-list .cat-header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.brand-block ul {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 81px;
+}
+
+.brand-block li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.brand-block li a {
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.brand-block img {
+    width: 100%;
+}

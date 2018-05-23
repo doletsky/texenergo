@@ -1,0 +1,187 @@
+.b_reclamation .header{	
+	height:60px;
+	line-height:60px;
+	text-align:center;	
+}
+.b_reclamation .b-bottom{border-bottom: 1px solid #ebebeb;}
+.b_reclamation .rec-block{clear:both;float:left;padding:10px 20px;width:920px;}
+.b_reclamation .prod-list.rec-block, .b_reclamation .s-num.rec-block{padding:10px 0; width:960px;}
+.orange{color:#ed5c2f;}
+.b_reclamation .reclBlock{float:left;width:222px;margin-right:10px;text-align:center;}
+.b_reclamation .reclBlock:last-child{margin-right:0;}
+.b_reclamation .reclBlock h1{font-size:16px;font-weight:bold;}
+.b_reclamation .reclBlock span{font-size:14px;}
+.b_reclamation .b-reclBlock{padding:15px 5px;height:65px;}
+.b_reclamation .cartForm-input{width:auto;}
+.products td{padding:0 10px;}
+.products td.first{padding-left:0;text-align:left;}
+.bigcaption{font-size:22px;}
+.smallcaption{font-size:11px;color:#727478;}
+.b_reclamation .fl{float:left;}
+.b_reclamation .cf{clear:both;}
+.pick-sn{clear:left;}
+.b_reclamation .rec-block.descr-block{padding-bottom:20px;}
+.descr-block textarea{
+	width:660px;
+	background-color: #eaeaea;
+    border: medium none;
+    border-radius: 20px;
+    display: block;
+    font-size: 15px;
+    height: 84px;
+    outline-style: none;
+    padding: 10px 20px;   
+}
+.bigcaption.padded{padding-bottom:20px;}
+.ta-container{margin-right:20px;}
+.b_reclamation .rec-block.final{text-align:center;}
+.b_reclamation .cartSubtotal .cartForm-input{width:120px;}
+
+.s-num{margin-top:50px;margin-bottom:15px;}
+
+.cartItem.s-num-item td.col-name{width:auto;}
+.s-num-item.cartItem{background:#eee;}
+.s-num-heading{padding-left:20px;padding-bottom:15px;}
+.sn-list{padding:20px 30px;}
+.sn-list .item{display:block;float:left;margin-right:20px;}
+.sn-list .num{float:left;height:42px;line-height:42px;font-size:18px;font-weight:bold;margin-right: 10px;margin-bottom:10px;}
+
+.cartItem {
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+    background-color: #fff;
+}
+
+.cartItem table {
+    width: 100%;
+}
+
+.cartItem table td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.b-cartImage {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    padding: 10px 10px 10px 25px;
+}
+.cartHeader .b-cartImage{height:auto;}
+
+.cartItem .b-cartImage .picture {
+    display: block;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.b-cartName {
+    width: 245px;
+    color: #6f6f6f;
+    font-size: 13px;
+    padding: 10px 25px 10px 10px;
+}
+
+.cartItem .cartName:hover {
+    text-decoration: underline;
+}
+
+.cartSerial {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.catDiscount-cart {
+    top: 0;
+    right: 15px;
+    margin-top: -5px;
+}
+
+.cartQnt {
+    float: left;
+}
+
+.cartQnt {
+    height: 32px;
+    margin-top: 56px;
+}
+
+.cartPrice {
+    width: 120px;
+    text-align: left;
+}
+
+.cartSubtotal-payment {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.cartSum {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ed5c2f;
+}
+
+.b-emptyCart {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.rounded-click {
+    width: 145px !important;
+}
+
+.rounded-order {
+    width: 160px !important;
+    padding-right: 0 !important;
+}
+
+.cartHeader {
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+    background-color: #fff;
+}
+
+.cartHeader table {
+    width: 100%;
+}
+
+.cartHeader table td {
+    text-align: left;
+    vertical-align: middle;
+    color: #6f6f6f;
+    font-size: 13px;
+    padding: 20px 0 19px 0;
+}
+
+
+.cartHeader td.col-img, .cartItem td.col-img{width:85px;}
+.cartHeader td.col-name{width:365px;}
+.cartItem td.col-name{width:360px;}
+.cartHeader td.col-price{width:122px;}
+.cartItem td.col-price{width:120px;}
+.cartHeader td.col-quant, .cartItem td.col-quant{width:100px;}
+.col-name-inside{padding-left:10px;}
+.cartHeader table td.cartPrice{padding-left:2px;}
+.cartHeader table td.cartSubtotal{padding-right:10px;}
+.main-reclamation{background:#fff;width:100%;float:left;margin-bottom:20px;}
+
+.submit_reclamation{margin-right:10px;}
+.calcelbutton{font-size:12px;}
+#description_file{display:none;}
+
+.filename{color:#727478;padding-top:5px;padding-left:10px; width: 180px;word-break: break-all;}
+#no_products_msg{color:#f25a3a;font-size:12px;width:100%;text-align:center;padding-top:10px;display:none;}
+.no_products_msg_wrap{height:30px;}
+.b-cartImage a.picture{background-size:contain;}
+
+.cartItem{
+	font-size:13px;
+}
+
+.b_reclamation .add-product-caption{height:18px;line-height:18px;padding-left:5px;}

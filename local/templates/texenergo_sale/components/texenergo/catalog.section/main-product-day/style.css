@@ -1,0 +1,210 @@
+.blk-product__item {
+  position:relative;
+}
+.main-sale-goods-day .owl-controls {
+  display:none !important;
+}
+.main-sale-goods-day .owl-carousel .owl-item {
+  float:none;
+  border: 1px solid #eee;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 60px !important;
+}
+.main-sale-goods-day .pPriceBlock {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.main-sale-goods-day .lower-price-stars {
+  margin-bottom:20px;
+}
+.main-sale-goods-day .blk-product__text {
+  line-height: 1.6;
+}
+.main-sale-goods-day .request-price {
+  font-size:20px !important;
+}
+.main-sale-goods-day .product-photos {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  z-index: -1;
+}
+.main-sale-goods-day .pProductImage {
+  margin-top:30px;
+}
+.product-day__header {
+  height:70px;
+}
+.pProductImage__header_left {
+    border: 18px solid transparent;
+    border-right: 10px solid #c1440d;
+    border-bottom: 0;
+    position: absolute;
+    top: -18px;
+    left: -11px;
+}
+.pProductImage__header_right {
+    border: 18px solid transparent;
+    border-left: 10px solid #c1440d;
+    border-bottom: 0;
+    position: absolute;
+    top: -18px;
+    left: 227px;
+}
+.pProductImage__header {
+  position:absolute;
+  top:-18px;
+  left:17px;  
+  padding:10px 0;
+  background-color:#ff5a12;
+  color:#fff;
+  width:210px;
+  height:40px;
+  text-align:center;
+  z-index:10;
+  padding-top:5px;
+}
+pProductImage__header_text {
+	font-family: "GothamProRegular", sans-serif;
+}
+.pProductImage__header_ico {
+  font-size:16px !important;
+  display:block !important;
+}
+.blk-product__img {
+  height:330px;
+  border:1px solid #eee;
+  position:relative;
+}
+.pLineCart .cat-promo {
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: -10px;
+}
+.pLineCart .price {
+  font-size:24px;
+}
+.pLineCart .price.old-price {
+  font-size:16px;
+  color:#ccc;
+  margin-left:20px;
+}
+.pLineCart .pCartButtons a {
+    border: 0 none;
+}
+
+.searchSeries {
+    background: #fff;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.searchSeries ul {
+    padding: 15px 0 15px 15px;
+    margin: 0;
+    background: #f8f8f8;
+}
+
+.searchSeries li {
+    float: left;
+    padding-right: 7px;
+    margin-right: 7px;
+    width: 150px;
+    min-height: 150px;
+    border-right: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+.searchSeries li:last-child {
+    border-right: 0;
+    float: right;
+}
+
+.searchSeries li a.picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+}
+
+.searchSeries li a img {
+    display: none;
+}
+
+.seriesOverview {
+    padding: 0 13px 0 20px;
+}
+
+.seriesOverview > h1 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.seriesOverview > p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #727478;
+}
+
+.seriesOverview .more {
+    color: #EE5B2F;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url(images/expand.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+}
+.pLineOverview .name-pline{font-weight:bold;}
+.img-product-day-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4b4e54;
+  height: 330px;
+  line-height: 1.8;
+  font-family: "MuseoSansCyrl100";
+  font-size: 16px;
+  color: #fff;
+  padding: 40px 25px;
+  z-index: 5;
+  opacity: 0.95;
+}
+/* days */
+.cat-promo-time {
+  padding-left:20px;
+}
+.cat-promo-time .digits {
+  display:inline-block;
+  width: 40px;
+  color: #fff;
+  background-color: #4b4e54;
+  margin-right: 10px;
+  padding: 10px 0;
+}
+.cat-promo-time .text {
+  font-family: MuseoSansCyrl100;
+  font-size:14px;
+  text-align:left;
+  padding-top:10px;
+}
+.cat-promo-captions {
+  margin-bottom:5px;
+  padding-left:20px;
+}
+.cat-promo-captions li {
+  display:inline-block;
+  width: 40px;
+  padding: 0;
+  margin-right: 11px;
+  font-family: MuseoSansCyrl100;
+  color: #c2c2c2;
+  font-size: 11px;
+}
+/* end days */

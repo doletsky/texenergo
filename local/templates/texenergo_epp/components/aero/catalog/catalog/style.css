@@ -1,0 +1,19 @@
+.main {
+    padding-bottom: 40px;
+}
+
+.group-switch.own-production-inside > span {
+    float: none;
+}
+
+.container .nine.nine-fullwidth{width:100%;margin-left:0;}
+.nine.nine-fullwidth .cat-products{padding-left:40px;}
+/* .sidebar-catalog .head.sidebar-head p{color:#fff;font-size:10px;width:140px;display:block;} */
+.sidebar-catalog span.name-cont{
+	display: inline-block;
+    vertical-align: middle;
+    width: 140px;
+	color:#fff;
+	font-size:10px;
+}
+a.head.sidebar-head:hover .name-cont{text-decoration:underline;}

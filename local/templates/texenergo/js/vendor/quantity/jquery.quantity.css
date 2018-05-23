@@ -1,0 +1,59 @@
+.quantity-container {
+    width: 138px;
+    height: 32px;
+
+    font-size: 10px;
+    line-height: 14px;
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quantity-container .value {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #6F6F6F;
+    display: inline;
+    border: none;
+    background: none;
+    -moz-appearance: textfield;
+    -moz-outline: 0;
+    outline: 0;
+
+    width: 64px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #EAEAEA;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.quantity-container .value::-webkit-outer-spin-button,
+.quantity-container .value::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-container .minus,
+.quantity-container .plus {
+    line-height: 30px;
+    font-size: 24px;
+    text-indent: -999em;
+    outline: 0;
+    height: 32px;
+    width: 32px;
+    background: url('quantity-icons.png') 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.quantity-container .minus {
+    float: left;
+    background-position: 0 0;
+}
+
+.quantity-container .plus {
+    float: right;
+    background-position: -39px 0;
+}

@@ -1,0 +1,55 @@
+.main-reclamation .relatedPubs-header{border-bottom:1px solid #ebebeb; height: auto;}
+.main-reclamation table td.name{width:600px;}
+.main-reclamation .orderItem header{padding-bottom:0;}
+.main-reclamation .accountFinancials {padding: 10px 29px 16px 25px;}
+.main-reclamation .btn_wrap{padding: 21px 26px 5px 35px;float: right;}
+.main-reclamation h1.main-reclamation_h1{
+	float: left;
+	margin: 20px 0 0 26px;
+	padding: 0 0 16px;
+	border: 0;
+}
+.main-reclamation .accountFinancials_name{
+	font-size: 16px;
+	color: #414042;
+	padding: 19px 0 0 0;
+	width: 407px;
+}
+.main-reclamation .accountFinancials_state{
+	font-size: 16px;
+	color: #414042;
+	padding: 19px 0 0 0;
+	width: 159px;
+}
+.main-reclamation .accountFinancials_cnt{
+	font-size: 16px;
+	color: #414042;
+	text-align: right;
+	padding: 19px 0 0 0;
+}
+.main-reclamation .accountFinancials_orderName{
+	text-align: left;
+	font-size: 23px;
+	font-weight: 300;
+	color: #f25a3a;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 1px 0 11px;
+	width: 407px;
+}
+.main-reclamation .accountFinancials_orderDate{
+	text-align: left;
+	font-size: 23px;
+	font-weight: 300;
+	color: #858585;
+	border-bottom: 1px solid #e5e5e5;
+}
+.main-reclamation .accountFinancials_orderTime{
+	text-align: right;
+	font-size: 23px;
+	font-weight: 300;
+	color: #858585;
+	border-bottom: 1px solid #e5e5e5;
+}
+.orderItem._bb10{
+	border-bottom: 10px solid #e8e8e8;
+}

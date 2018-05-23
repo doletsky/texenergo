@@ -1,0 +1,1 @@
+<? $MESS["CODEROID_BARCODE_ENTER_CODE"] = "Неверный штрих код";

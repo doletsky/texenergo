@@ -1,0 +1,51 @@
+.button {
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 40px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid #C4C5C6;
+    color: #ED5C2F;
+    background: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.button.orange {
+    border-color: #F25A3A;
+    background: #F25A3A;
+    color: #fff;
+}
+.button.dark {
+    border-color: #36393f;
+    background: #36393f;
+    color: #fff;
+}
+.button.size1{
+	width: 156px;
+	box-sizing: border-box;
+}
+
+.button.transparent {
+    background: transparent;
+    color: #727478;
+}
+
+.button[disabled],
+.button.disabled {
+    background: #fff;
+    border: 1px solid #C4C5C6;
+    color: #C4C5C6;
+    cursor: default;
+}
+
+.button.small {
+    line-height: 31px;
+    height: 31px;
+}

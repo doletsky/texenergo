@@ -1,0 +1,28 @@
+.fancybox-skin {
+    background: #fff;
+    border-radius: 0;
+}
+
+.fancybox-close {
+    background: url(../img/popup-close.png) no-repeat center center;
+    top: -38px;
+    right: -38px;
+}
+
+#fancybox-thumbs.bottom {
+    bottom: 50px;
+}
+
+#fancybox-thumbs ul li {
+    opacity: 1;
+}
+
+#fancybox-thumbs ul li a {
+    background: #fff;
+    border: 1px solid #ebebeb;
+}
+
+.fancybox-prev,
+.fancybox-next{
+    /*display: none !important;*/
+}

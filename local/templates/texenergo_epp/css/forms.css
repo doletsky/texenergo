@@ -1,0 +1,90 @@
+
+.form .field-error {
+    background: #ffeee9;
+    margin-bottom: 3px;
+}
+
+.form .NFI-wrapper.field-error input {
+    border-color: #F25A3A;
+    margin-bottom: 3px;
+}
+
+.form .field-error[type=checkbox] + .label {
+    color: #F25A3A;
+}
+
+.form .field-error-message {
+    color: #F25A3A;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.form .form-success-message {
+    color: green;
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+.form .form-error-message,
+.form .errortext,
+.form .notetext {
+    color: #F25A3A;
+    font-size: 12px;
+    /*width: 280px;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form .form-error-message a,
+.form .errortext a,
+.form .notetext a {
+    color: #F25A3A;
+    text-decoration: underline;
+}
+
+.form .form-row {
+    margin-bottom: 20px;
+}
+
+.form .form-row > label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+.form .form-row > .inputtext {
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  background-color: #eaeaea;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  outline-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.form .form-buttons {
+    text-align: center;
+}
+
+/*.cartLogin-form .errortext,
+.cartLogin-form .notetext {
+    margin: 15px 67px;
+}
+*/
+
+.form .form-row > .inputtext,
+.form.cb_form .form-row > textarea,
+.cartForm-input,
+.cartForm-input-user,
+.formInput {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

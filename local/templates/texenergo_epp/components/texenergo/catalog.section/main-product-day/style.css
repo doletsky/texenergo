@@ -1,0 +1,77 @@
+.pLineCart .cat-promo {
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: -10px;
+}
+
+.pLineCart .pCartButtons a {
+    border: 0 none;
+}
+
+.searchSeries {
+    background: #fff;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.searchSeries ul {
+    padding: 15px 0 15px 15px;
+    margin: 0;
+    background: #f8f8f8;
+}
+
+.searchSeries li {
+    float: left;
+    padding-right: 7px;
+    margin-right: 7px;
+    width: 150px;
+    min-height: 150px;
+    border-right: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+.searchSeries li:last-child {
+    border-right: 0;
+    float: right;
+}
+
+.searchSeries li a.picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+}
+
+.searchSeries li a img {
+    display: none;
+}
+
+.seriesOverview {
+    padding: 0 13px 0 20px;
+}
+
+.seriesOverview > h1 {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.seriesOverview > p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #727478;
+}
+
+.seriesOverview .more {
+    color: #EE5B2F;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url(images/expand.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+}
+.pLineOverview .name-pline{font-weight:bold;}

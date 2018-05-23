@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'rouble';
+    src: url('../../fonts/rouble.eot');
+    src: url('../../fonts/rouble.ttf') format('truetype');
+}
+.rouble {
+    font-family: rouble;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    background: #fff;
+}
+html * {
+    box-sizing: border-box;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    color: #36393f;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.4;
+    position: relative;
+}
+.document {
+    width: auto;
+    padding: 80px 100px;
+}
+
+.line {
+    width: 70%;
+    height: 2px;
+    background: #ed5c2f;
+}
+.line-full {
+    width: 80%;
+}
+h1 {
+    padding-bottom: 5px;
+    font-size: 23px;
+    font-weight: 200;
+}
+
+.shop-info {
+    color: #ed5c2f;
+    font-size: 12px;
+    font-weight: 600;
+    vertical-align: top;
+    padding-right: 100px;
+}
+.shop-info strong {
+    color: #36393f;
+    font-size: 14px;
+}
+.products-list {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.products-list thead th {
+    background: #575e64;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 11px;
+}
+
+.products-list td {
+    border-bottom: 1px dotted #acabab;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 12px;
+}
+.products-list td + td,
+.products-list thead th + th {
+    border-left: 1px dotted #acabab;
+}
+
+.products-list tr:last-child {
+    border-bottom: 2px solid #565e64;
+}
+.products-list tr:last-child td + td {
+    border-left: 1px dotted #565e64;
+}
+.products-list .taxes td {
+    border-bottom: 1px dotted #565e64;
+}
+.price,
+.quantity,
+.sum {
+    text-align: right;
+}
+.message {
+    margin-bottom: 40px;
+    color: #ed5c2f;
+}
+@media print {
+    .document {
+        width: auto;
+        padding: 0;
+    }
+    .products-list {
+        width: 100%;
+    }
+}

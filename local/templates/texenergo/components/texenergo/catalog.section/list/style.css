@@ -1,0 +1,85 @@
+.products-list {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+}
+
+.products-list thead td {
+    text-align: center;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 25px 10px;
+}
+
+.products-list thead td:last-child {
+    text-align: right;
+    padding-right: 97px;
+}
+
+.products-list tbody td {
+    vertical-align: middle;
+    text-align: left;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 10px;
+}
+
+.products-list tbody .rating-col .cat-rating-line {
+    margin: 0;
+}
+
+.products-list tbody .cat-price-line {
+    line-height: 1em;
+}
+
+.products-list tbody .cat-line-icons {
+    float: none;
+}
+
+.products-list tbody .old-price-last-list {
+    position: static !important;
+    top: 0;
+    left: 0;
+}
+
+.products-list tbody .last-list-price-col,
+.products-list tbody .product-rest,
+.products-list tbody .rating-col {
+    text-align: center;
+}
+.products-list tbody .product-rest {
+    font-size: 14px;
+}
+.products-list tbody .line-product-info {
+    position: static !important;
+    top: 0;
+    margin: 0;
+}
+
+.products-list tbody .line-thumbnail {
+    position: relative;
+}
+
+.products-list tbody .line-thumbnail .wrap {
+    position: relative;
+}
+
+.products-list tbody .line-thumbnail .wrap .cat-discount {
+    top: -5px;
+    right: -5px;
+}
+
+.products-list tbody .product-icons {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.products-list .cat-promo {
+    width: 130px;
+}
+
+.products-list .cat-promo .digits {
+    text-align: center;
+}
+
+.cat-price.cat-price-line .request-price {
+    font-size: 12px;
+}

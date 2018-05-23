@@ -1,0 +1,36 @@
+.products-grid .product-image a.picture {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 130px;
+}
+
+.products-grid .product-image a.picture img {
+    display: none;
+}
+
+.products-grid .pTechnicalsMain {
+    width: 100%;
+}
+
+.products-grid .pTechnicalsMain td,
+.products-grid .pTechnicalsMain th {
+    text-align: left;
+    width: 50%;
+    padding: 3px;
+    vertical-align: top;
+}
+
+.cat-hoverbox .link-to-analogs {
+    float: left;
+    color: #fff;
+}
+
+
+/*.products-grid .cell:last-child .cat-product{*/
+    /*border-right: 0;*/
+/*}*/
+
+.cat-price .request-price {
+    font-size: 12px;
+}

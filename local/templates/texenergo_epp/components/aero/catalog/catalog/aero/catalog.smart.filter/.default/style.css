@@ -1,0 +1,99 @@
+.filter {
+    position: relative;
+}
+
+.smartfilter {
+    background: #393B41;
+}
+
+.filter .modef {
+    background: #4E5158;
+    border: 1px solid #ee5b2f;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 13px;
+    margin-top: -13px;
+    padding: 10px 25px 10px 10px;
+    position: absolute;
+    right: -140px;
+    white-space: nowrap;
+    z-index: 50000;
+}
+
+.filter .modef a {
+    color: #ee5b2f;
+}
+
+.filter .ecke {
+    -moz-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-right: 1px solid #8BBECB;
+    border-top: 1px solid #8BBECB;
+    box-shadow: 2px -1px 4px -1px rgba(0, 0, 0, 0.2);
+    display: block;
+    height: 10px;
+    margin-top: -5px;
+    position: absolute;
+    right: -7px;
+    top: 50%;
+    width: 10px;
+}
+
+.filter .min-price,
+.filter .max-price {
+    width: 35%;
+    margin: 15px 0;
+}
+
+.filter .min-price {
+    float: left;
+}
+
+.filter .max-price {
+    float: right;
+    margin-right: 25px;
+}
+
+.filter .sidebar-child {
+    height: auto;
+    line-height: 1.5em;
+    padding: 10px 0 10px 25px;
+    overflow: hidden;
+}
+
+.filter .sidebar-child.show-all {
+    text-align: center;
+    padding-left: 0;
+}
+
+.filter .sidebar-child.show-all a {
+    color: #ee5b2f;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url(images/expand.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+}
+
+.filter .sidebar-child .label:before {
+    top: 3px;
+}
+
+.sidebar-header .more-icon {
+    background-position: left bottom;
+}
+
+.sidebar-header.collapsed .more-icon {
+    background-position: left top;
+}
+
+.filter .sidebar-child select {
+    width: 160px;
+}
+
+.filter .sidebar-child .select2-choice {
+    margin-top: 0 !important;
+}

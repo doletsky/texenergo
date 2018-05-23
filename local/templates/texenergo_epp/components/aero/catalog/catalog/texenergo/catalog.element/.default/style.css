@@ -1,0 +1,21 @@
+.pTechnicalsMain {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pTechnicalsMain th,
+.pTechnicalsMain td {
+    width: 50%;
+    border-bottom: 1px solid #EBEBEB;
+    vertical-align: top;
+}
+
+.pTechnicalsMain th {
+    text-align: left;
+    padding: 8px 5px 8px 20px
+}
+
+.pTechnicalsMain td {
+    text-align: right;
+    padding: 8px 20px 8px 5px
+}
