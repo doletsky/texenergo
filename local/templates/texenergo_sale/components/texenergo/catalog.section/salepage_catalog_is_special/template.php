@@ -8,7 +8,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
             <div class="inner">
                 <h3 class="product_item__header"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
                 <span class="product_item___disc">%</span>
-                <div class="product_item__vendor-code">Артикул: <span class="vendor-code"><?=$arItem["PROPERTIES"]["SKU"]["VALUE"]?></span></div>
+                <div class="product_item__vendor-code" <?if(strlen($arItem["PROPERTIES"]["SKU"]["VALUE"])<1):?>style="visibility: hidden;" <?endif?>>Артикул: <span class="vendor-code"><?=$arItem["PROPERTIES"]["SKU"]["VALUE"]?></span></div>
                 <div class="product_item__img owl-subslider-salepage" id="<?=$arItem["ID"]?>">
                     <!--<div class="row">
                         <div class="col-xs-6">-->
@@ -57,7 +57,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
                         <div class="price col-xlg-6 col-lg-6 col-md-6 col-sm-6 col-xs-6"><?=$arItem["PRICE"]?>
                             <i class="rouble">a</i>
                         </div>
-                        <div class="old-price col-xlg-6 col-lg-6 col-md-6 col-sm-6 col-xs-6"><?=$arItem["OLD_PRICE"]?>.00 <i
+                        <div class="old-price col-xlg-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" <?if((int)$arItem["OLD_PRICE"]==0):?>style="visibility: hidden;" <?endif?>><?=$arItem["OLD_PRICE"]?>.00 <i
                                     class="rouble">a</i></div>
                     </div>
                 </div>
