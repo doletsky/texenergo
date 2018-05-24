@@ -40,8 +40,7 @@
 
                 $arEls[$ar_fields["IBLOCK_SECTION_ID"]][]=$ar_fields["ID"];
             }
-            //?><!--<pre>--><?//print_r($arEls)?><!--</pre>--><?//
-            foreach ($arEls as $secId=>$arIds):
+            foreach ($arEls as $secId=>$arIds): echo "<!-- sec=".$secId." -->";
                 global $arrFilter;
                 $arrFilter=array("ID"=>$arIds);
 

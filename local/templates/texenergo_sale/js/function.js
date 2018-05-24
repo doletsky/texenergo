@@ -65,17 +65,17 @@ $(function () {
     });
 
 	// Sale page
-    var owlSliderSalepage=$('.owl-slider-salepage').owlCarousel({
+    $('.owl-slider-salepage').owlCarousel({
         items: 5,
-        itemsDesktop: false,
-        itemsDesktopSmall: false,
-        itemsTablet: false,
-        itemsMobile: false,
+        itemsDesktop: [1440, 4],
+        itemsDesktopSmall: [1200, 3],
+        itemsTablet: [990, 2],
+        itemsMobile: [600,1],
         pagination: false,
         navigation: true,
         navigationText: false,
         slideSpeed: 500,
-        afterInit: function (d) {
+        afterInit: function () {
             $(window).load(function () {
                 $('.owl-slider-salepage .owl-controls.clickable').css('display','none');
                 $('.lower-price__bottom_nav').find('li.owl-next').click(function () {
@@ -88,6 +88,35 @@ $(function () {
             //
         }
     });
+
+    $('.owl-subslider-salepage').each(function () {
+        var id=$(this).attr('id');
+        $(this).carouFredSel({
+            items               : 1,
+            direction           : "right",
+            auto                : {play: false},
+            prev                : "#left"+id,
+            next                : "#right"+id,
+            circular            : false,
+            infinite            : true
+        });
+    });
+
+
+        // ,
+        // afterInit: function () {
+        //     $(window).load(function () {
+        //
+        //             e.children('.owl-controls.clickable').css('display','none');
+        //             e.parent('div.inner').find('.round_nav_right').click(function () {
+        //                 e.children('.owl-controls.clickable .owl-next').mouseup();
+        //             });
+        //             e.parent('div.inner').find('.round_nav_left').click(function () {
+        //                 e.children('.owl-controls.clickable .owl-prev').mouseup();
+        //             });
+        //
+        //     });
+        // }
 
 	// Catalog page
 

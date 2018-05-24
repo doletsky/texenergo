@@ -9,17 +9,33 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
                 <h3 class="product_item__header"><a href="<?=$arItem["DETAIL_PAGE_URL"]?>"><?=$arItem["NAME"]?></a></h3>
                 <span class="product_item___disc">%</span>
                 <div class="product_item__vendor-code">Артикул: <span class="vendor-code"><?=$arItem["PROPERTIES"]["SKU"]["VALUE"]?></span></div>
-                <div class="product_item__img">
+                <div class="product_item__img owl-subslider-salepage" id="<?=$arItem["ID"]?>">
                     <!--<div class="row">
                         <div class="col-xs-6">-->
                     <?if(is_array($arItem["DETAIL_PICTURE"])):?>
-                        <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
-                            <img class="img-responsive"
-                                 src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>"
-                                 alt="<?=$arItem["DETAIL_PICTURE"]["ALT"]?>"
-                                 id="product_picture_<?=$arItem["ID"]?>" />
-                        </a>
+                        <div class="row" style="height: 135px;">
+                            <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
+                                <img class="img-responsive" style="max-height: 135px; max-width: 174px;position: relative;left: 15px;"
+                                     src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>"
+                                     alt="<?=$arItem["DETAIL_PICTURE"]["ALT"]?>"
+                                     id="product_picture_<?=$arItem["ID"]?>" />
+                            </a>
+                        </div>
                     <?endif?>
+                    <?if(is_array($arItem["PROPERTIES"]["PHOTOS"]["VALUE"])){
+                        foreach ($arItem["PROPERTIES"]["PHOTOS"]["VALUE"] as $photoId){
+                            $arFile = CFile::GetFileArray($photoId);
+                            ?>
+                            <div class="row" style="height: 135px;">
+                            <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
+                                <img class="img-responsive" style="max-height: 135px; max-width: 174px;position: relative;left: 15px;"
+                                     src="<?=$arFile["SRC"]?>"
+                                     id="product_picture_<?=$arItem["ID"]?>" />
+                            </a>
+                        </div>
+                            <?
+                        }
+                    }?>
                     <!--</div>
                     <div class="col-xs-6">
                         <div class="img-mini img-responsive" id="product_picture_459548" style="background-image: url(https://www.texenergo.ru/upload/resize_cache/thumbnail_photo/7f/7f291be8-a4f8-4aba-b71e-2357c8756dec/photos_7f291be8-a4f8-4aba-b71e-2357c8756dec_001_130_130.jpg)"></div>
@@ -32,8 +48,8 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
                         Референс: <span class="reference"><?=$arItem["CODE"]?></span>
                     </div>
                     <div class="col-xs-6 round_nav_string" style="text-align: right;padding-top: 20px;">
-                        <div class="round_nav round_nav_left"><</div>
-                        <div class="round_nav round_nav_right">></div>
+                        <div id="left<?=$arItem["ID"]?>" class="round_nav round_nav_left"><</div>
+                        <div id="right<?=$arItem["ID"]?>" class="round_nav round_nav_right">></div>
                     </div>
                 </div>
                 <div class="row">
@@ -46,7 +62,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
                     </div>
                 </div>
                 <div class="row lower-price-bottom-row">
-                    <div class="col-xs-5 lower-price-stars">
+                    <div class="col-xs-6 lower-price-stars">
                         <i class="zmdi zmdi-star"></i> <i class="zmdi zmdi-star"></i> <i class="zmdi zmdi-star"></i>
                         <i class="zmdi zmdi-star-half"></i> <i class="zmdi zmdi-star-outline"></i>
                     </div>
