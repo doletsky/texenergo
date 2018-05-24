@@ -24,7 +24,7 @@
 		<div class="row">
 			<h2 class="main-blk__header">Товары с выгодной ценой</h2>
 		</div>
-		<div class="row" id="lower-price-main-container-row">
+		<div class="row" id="lower-price-main-container-row" style="visibility: hidden" >
             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xlg-10">
                 <div class="row owl-slider-salepage">
             <?if(1):

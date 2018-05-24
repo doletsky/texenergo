@@ -77,7 +77,9 @@ $(function () {
         slideSpeed: 500,
         afterInit: function () {
             $(window).load(function () {
-                $('.owl-slider-salepage .owl-controls.clickable').css('display','none');
+                $('#lower-price-main-container-row').css('visibility','visible');
+                $('.owl-slider-salepage .owl-controls.clickable').css('opacity','0');
+                $('.owl-slider-salepage .owl-controls.clickable').css('position','absolute');
                 $('.lower-price__bottom_nav').find('li.owl-next').click(function () {
                     $('.owl-slider-salepage .owl-controls.clickable .owl-next').mouseup();
                 });

@@ -1,0 +1,32 @@
+.main-lower-price .item-img{
+    max-height: 135px;
+    max-width: 135px;
+    position: relative;
+    left: 15px;
+}
+
+.main-lower-price .block-min-img {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    right: 35px;
+    top: 150px;
+}
+
+.main-lower-price .img-mini{
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+    position: relative;
+}
+
+.main-lower-price .round_nav{
+    cursor: pointer;
+}
+
+.main-lower-price .owl-wrapper{
+    padding-bottom: 30px;
+}

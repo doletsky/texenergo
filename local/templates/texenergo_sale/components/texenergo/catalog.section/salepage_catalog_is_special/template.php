@@ -10,39 +10,40 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
                 <span class="product_item___disc">%</span>
                 <div class="product_item__vendor-code" <?if(strlen($arItem["PROPERTIES"]["SKU"]["VALUE"])<1):?>style="visibility: hidden;" <?endif?>>Артикул: <span class="vendor-code"><?=$arItem["PROPERTIES"]["SKU"]["VALUE"]?></span></div>
                 <div class="product_item__img owl-subslider-salepage" id="<?=$arItem["ID"]?>">
-                    <!--<div class="row">
-                        <div class="col-xs-6">-->
                     <?if(is_array($arItem["DETAIL_PICTURE"])):?>
                         <div class="row" style="height: 135px;">
                             <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
-                                <img class="img-responsive" style="max-height: 135px; max-width: 174px;position: relative;left: 15px;"
+                                <img class="img-responsive item-img"
                                      src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>"
                                      alt="<?=$arItem["DETAIL_PICTURE"]["ALT"]?>"
                                      id="product_picture_<?=$arItem["ID"]?>" />
                             </a>
                         </div>
                     <?endif?>
+                    <?$arMinImg='';?>
                     <?if(is_array($arItem["PROPERTIES"]["PHOTOS"]["VALUE"])){
                         foreach ($arItem["PROPERTIES"]["PHOTOS"]["VALUE"] as $photoId){
                             $arFile = CFile::GetFileArray($photoId);
                             ?>
                             <div class="row" style="height: 135px;">
                             <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
-                                <img class="img-responsive" style="max-height: 135px; max-width: 174px;position: relative;left: 15px;"
+                                <img class="img-responsive item-img"
                                      src="<?=$arFile["SRC"]?>"
                                      id="product_picture_<?=$arItem["ID"]?>" />
                             </a>
                         </div>
                             <?
+                            if(strlen($arMinImg)==0)$arMinImg=$arFile["SRC"];
                         }
                     }?>
-                    <!--</div>
-                    <div class="col-xs-6">
-                        <div class="img-mini img-responsive" id="product_picture_459548" style="background-image: url(https://www.texenergo.ru/upload/resize_cache/thumbnail_photo/7f/7f291be8-a4f8-4aba-b71e-2357c8756dec/photos_7f291be8-a4f8-4aba-b71e-2357c8756dec_001_130_130.jpg)"></div>
-                        <div class="img-mini img-responsive" id="product_picture_459548" style="background-image: url(https://www.texenergo.ru/upload/resize_cache/thumbnail_photo/7f/7f291be8-a4f8-4aba-b71e-2357c8756dec/photos_7f291be8-a4f8-4aba-b71e-2357c8756dec_001_130_130.jpg)"></div>
-                    </div>
-                </div>-->
+
                 </div>
+                <?if(strlen($arMinImg)>0):?>
+                        <div class="block-min-img">
+                            <div class="img-mini img-responsive" id="product_picture_<?=$arItem["ID"]?>" style="background-image: url(<?=$arItem["DETAIL_PICTURE"]["SRC"]?>); top:50px;"></div>
+                            <div class="img-mini img-responsive" id="product_picture_<?=$arItem["ID"]?>" style="background-image: url(<?=$arMinImg?>); top:-50px;"></div>
+                        </div>
+                <?endif;?>
                 <div class="row">
                     <div class="col-xs-6">
                         Референс: <span class="reference"><?=$arItem["CODE"]?></span>
@@ -54,10 +55,10 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
                 </div>
                 <div class="row">
                     <div class="product_item__price clearfix col-xlg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="price col-xlg-6 col-lg-6 col-md-6 col-sm-6 col-xs-6"><?=$arItem["PRICE"]?>
+                        <div class="price col-xlg-6 col-lg-6 col-md-6 col-sm-6 col-xs-6"><?=number_format($arItem["PRICE"], 2, '.', ' ')?>
                             <i class="rouble">a</i>
                         </div>
-                        <div class="old-price col-xlg-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" <?if((int)$arItem["OLD_PRICE"]==0):?>style="visibility: hidden;" <?endif?>><?=$arItem["OLD_PRICE"]?>.00 <i
+                        <div class="old-price col-xlg-6 col-lg-6 col-md-6 col-sm-6 col-xs-6" <?if((int)$arItem["OLD_PRICE"]==0):?>style="visibility: hidden;" <?endif?>><?=number_format($arItem["OLD_PRICE"], 2, '.', ' ')?> <i
                                     class="rouble">a</i></div>
                     </div>
                 </div>
