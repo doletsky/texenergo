@@ -10,38 +10,36 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
                 <span class="product_item___disc">%</span>
                 <div class="product_item__vendor-code" <?if(strlen($arItem["PROPERTIES"]["SKU"]["VALUE"])<1):?>style="visibility: hidden;" <?endif?>>Артикул: <span class="vendor-code"><?=$arItem["PROPERTIES"]["SKU"]["VALUE"]?></span></div>
                 <div class="product_item__img owl-subslider-salepage" id="<?=$arItem["ID"]?>">
-                    <?if(is_array($arItem["DETAIL_PICTURE"])):?>
-                        <div class="row" style="height: 135px;">
-                            <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
-                                <img class="img-responsive item-img"
-                                     src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>"
-                                     alt="<?=$arItem["DETAIL_PICTURE"]["ALT"]?>"
-                                     id="product_picture_<?=$arItem["ID"]?>" />
-                            </a>
-                        </div>
-                    <?endif?>
-                    <?$arMinImg='';?>
-                    <?if(is_array($arItem["PROPERTIES"]["PHOTOS"]["VALUE"])){
-                        foreach ($arItem["PROPERTIES"]["PHOTOS"]["VALUE"] as $photoId){
-                            $arFile = CFile::GetFileArray($photoId);
+                    <?if(!empty($arItem["PICTURE_PHOTOS_PRODUCT"])){
+                        foreach ($arItem["PICTURE_PHOTOS_PRODUCT"] as $photoSrc){
                             ?>
-                            <div class="row" style="height: 135px;">
+                            <div class="row" style="height: 130px;">
                             <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
                                 <img class="img-responsive item-img"
-                                     src="<?=$arFile["SRC"]?>"
+                                     src="<?=$photoSrc?>"
                                      id="product_picture_<?=$arItem["ID"]?>" />
                             </a>
                         </div>
                             <?
-                            if(strlen($arMinImg)==0)$arMinImg=$arFile["SRC"];
                         }
+                    }else{
+                        if(is_array($arItem["DETAIL_PICTURE"])):?>
+                            <div class="row" style="height: 130px;">
+                                <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
+                                    <img class="img-responsive item-img"
+                                         src="<?=$arItem['PICTURE']?>"
+                                         alt="<?=$arItem["DETAIL_PICTURE"]["ALT"]?>"
+                                         id="product_picture_<?=$arItem["ID"]?>" />
+                                </a>
+                            </div>
+                        <?endif;
                     }?>
 
                 </div>
-                <?if(strlen($arMinImg)>0):?>
+                <?if(!empty($arItem["PICTURE_40"])):?>
                         <div class="block-min-img">
-                            <div class="img-mini img-responsive" id="product_picture_<?=$arItem["ID"]?>" style="background-image: url(<?=$arItem["DETAIL_PICTURE"]["SRC"]?>); top:50px;"></div>
-                            <div class="img-mini img-responsive" id="product_picture_<?=$arItem["ID"]?>" style="background-image: url(<?=$arMinImg?>); top:-50px;"></div>
+                            <div class="img-mini img-responsive" id="product_picture_<?=$arItem["ID"]?>" style="background-image: url(<?=$arItem["PICTURE_40"][0]?>); top:50px;"></div>
+                            <div class="img-mini img-responsive" id="product_picture_<?=$arItem["ID"]?>" style="background-image: url(<?=$arItem["PICTURE_40"][1]?>); top:-50px;"></div>
                         </div>
                 <?endif;?>
                 <div class="row">

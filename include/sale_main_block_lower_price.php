@@ -66,7 +66,7 @@
                     "CACHE_FILTER" => "N",
                     "CACHE_GROUPS" => "Y",
                     "CACHE_TIME" => "36000000",
-                    "CACHE_TYPE" => "N",
+                    "CACHE_TYPE" => "A",
                     "COMPATIBLE_MODE" => "Y",
                     "CONVERT_CURRENCY" => "Y",
                     "CURRENCY_ID" => "RUB",
@@ -135,6 +135,7 @@
                     "PRODUCT_SUBSCRIPTION" => "Y",
                     "PROPERTY_CODE" => array(),
                     "PROPERTY_CODE_MOBILE" => array(),
+                    "RAND_NUMBER" => rand(1, 50),//для кеширования случайной выборки
                     "RCM_PROD_ID" => $_REQUEST["PRODUCT_ID"],
                     "RCM_TYPE" => "personal",
                     "SECTION_CODE" => "",

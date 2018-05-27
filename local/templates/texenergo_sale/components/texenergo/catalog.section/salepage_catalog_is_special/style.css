@@ -1,6 +1,6 @@
 .main-lower-price .item-img{
-    max-height: 135px;
-    max-width: 135px;
+    max-height: 130px;
+    max-width: 130px;
     position: relative;
     left: 15px;
 }
@@ -9,7 +9,7 @@
     position: absolute;
     width: 50px;
     height: 100px;
-    right: 35px;
+    right: 30px;
     top: 150px;
 }
 
